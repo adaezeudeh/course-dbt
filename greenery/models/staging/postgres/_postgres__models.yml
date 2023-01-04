@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_superheroes
+    description: Demographics about each superhero such as name, hair color, height and weight. 
+
+  - name: stg_addresses
+    description: Address details for each user on the platform.
+
+  - name: stg_events
+    description: details of each unique event on the platform such as session_id, page_url.
+
+  - name: stg_order_items
+    description: details of items in the order such as product_id, quantity.
+
+  - name: stg_orders
+    description: details on each unique order on the platform such as order_cost,tracking_id.
+
+  - name: stg_products
+    description: details on each unique product on the platform such as name, price.
+
+  - name: stg_promos
+    description: details on each unique promocode for the orders on the platform such as discount, status. 
+     
+  - name: stg_users
+    description: details on each unique user on platform such as name, first_name,last_name. 

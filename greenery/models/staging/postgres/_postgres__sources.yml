@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+
+  - name: postgres # name of the source (this can be named whatever you want, but should be descriptive. this source (superheroes) is used for our week 1 tutorial so thats why i named it this way)
+    schema: public # this is the schema our raw data lives in
+    database: dbt # this is the name of our database
+
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+
+    tables:
+      - name: addresses
+        #description: >
+
+      - name: users 
+        loaded_at_field: created_at
+
+      - name: events 
+        loaded_at_field: created_at
+
+      - name: orders 
+        loaded_at_field: created_at
+
+      - name: products 
+
+      - name: order_items 
+
+      - name: promos 
+    
+      - name: superheroes 
+        loaded_at_field: created_at
+        description: >
+          Contains demographic information about each superhero 
